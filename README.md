@@ -1,84 +1,40 @@
-# FoodBank
-Food bank is a food review posting site developed in Django. Where user can Register, Login Then add review. User can like review, Update their own profile, Edit their posted review also can delete them. There is a comment system implement for each review.
+# Foodset
 
-<h2>Requirements</h2>
-<pre>open requirements.txt file to see requirements</pre>
+The features and modules for a food-related web application with user registration and authentication 
+functionality.     
 
-<h2>Installing</h2>
-<pre>open terminal and type</pre>
-<code>git clone https://github.com/devmahmud/FoodBank.git</code><br><br>
+    1. User Registration and Login: Allows users to register for a new account 
+    and use it for log in with existing credentials. Includes a signup button for 
+    new users and a login button for existing users.
 
-<h4>or simply download using the url below</h4>
-<code>https://github.com/devmahmud/FoodBank.git</code><br>
+    2. Dashboard: Displays all the posts created by the user in a table format.
 
-<h2>To migrate the database open terminal in project directory and type</h2>
-<code>python manage.py makemigrations</code><br>
-<code>python manage.py migrate</code>
+    3. Profile Page: Provides details about the user's profile, such as username, 
+    email, profile picture, and any additional information they choose to include.
 
-<h2>Static files collection</h2>
-<pre>open terminal and type</pre>
-<code>python manage.py collectstatic</code>
+    4. Create Post: Enables users to create new posts about food items. 
+    This feature likely includes fields for the food item's name, description, price, taste, and location.
 
-<h2>Creating Superuser</h2>
-<pre>To create superuser open terminal and type</pre>
-<code>python manage.py createsuperuser</code>
+    5. Add Images: Allows users to upload images of the food items they're posting about. Supports JPG format 
+    and PNG format for image uploads.
 
-<h2> For password Reset functionality by email fill up the information in Your Project setting </h2>
-<code>EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'</code><br>
-<code>EMAIL_HOST = 'smtp.gmail.com'</code><br>
-<code>EMAIL_PORT = 587</code><br>
-<code>EMAIL_USE_TLS = True</code><br>
-<code>EMAIL_HOST_USER = 'your email'</code><br>
-<code>EMAIL_HOST_PASSWORD = 'your email password'</code><br>
+    6. Edit Post: Gives users the ability to edit posts they've created previously. 
+    This feature allows users to update information such as about the food item, 
+    including its name, description, price, etc.
 
-<h2> To run the program in local server use the following command </h2>
-<code>python manage.py runserver</code>
+    7. Delete Post: Allows users to delete posts they no longer want to be displayed on the platform.
 
-<p>Then go to http://127.0.0.1:8000 in your browser</p>
+    8. Price and Other Details: Displays additional details about the food item, such as its price, taste, location, 
+    and the number of people it serves.
 
-<h2>Project snapshot</h2>
-<h3>FoodBank Home Page</h3>
-<div align="center">
-    <img src="https://user-images.githubusercontent.com/19981097/54106748-5304f280-4401-11e9-8651-c8febbf0bd91.png" width="100%"</img> 
-</div>
+    9. Password Change: Provides users with the ability to change their account password for security purposes,
+    while also ensuring account integrity.
 
-<h3>User Login Page</h3>
-<div align="center">
-    <img src="https://user-images.githubusercontent.com/19981097/54106807-80ea3700-4401-11e9-9446-f8fd7aa15b1f.png" width="100%"</img> 
-</div>
+    10. Profile Picture: Enables users to upload or change their profile picture. This feature allows users 
+    to add a profile picture that they'd like to personalize their profiles.
 
-<h3>User Registration Page</h3>
-<div align="center">
-    <img src="https://user-images.githubusercontent.com/19981097/54106864-b000a880-4401-11e9-92d4-8b743ade01ad.png" width="100%"</img> 
-</div>
+    11. Logout: Logs the user out of their account, terminating their current session.
 
-<h3>Dashboard Page</h3>
-<div align="center">
-    <img src="https://user-images.githubusercontent.com/19981097/54106920-e5a59180-4401-11e9-8f01-e79fe229ef78.png" width="100%"</img> 
-</div>
-
-<h3>Profile Page</h3>
-<div align="center">
-    <img src="https://user-images.githubusercontent.com/19981097/54107006-1a194d80-4402-11e9-898a-1673e7ca5f31.png" width="100%"</img> 
-</div>
-
-<h3>Create Post Page</h3>
-<div align="center">
-    <img src="https://user-images.githubusercontent.com/19981097/54107051-41701a80-4402-11e9-9139-ca71c74ef670.png" width="100%"</img> 
-</div>
-
-<h3>Post Details Page</h3>
-<div align="center">
-    <img src="https://user-images.githubusercontent.com/19981097/54107124-6e243200-4402-11e9-9f4c-20c1c83503e9.png" width="100%"</img> 
-</div>
-
-<h2>Author</h2>
-<blockquote>
-  Mahmudul alam<br>
-  Email: expelmahmud@gmail.com
-</blockquote>
-
-<div align="center">
-    <h3>========Thank You !!!=========</h3>
-</div>
-
+These features cover the core functionality required for a food-related web application, 
+providing users with a seamless experience for sharing, discovering, and interacting with 
+food-related content while also ensuring their account security and personalization options.

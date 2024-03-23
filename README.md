@@ -38,3 +38,5 @@ functionality.
 These features cover the core functionality required for a food-related web application, 
 providing users with a seamless experience for sharing, discovering, and interacting with 
 food-related content while also ensuring their account security and personalization options.# foodset
+
+## Screenshots

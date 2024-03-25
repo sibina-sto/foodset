@@ -9,6 +9,12 @@ from .models import Profile
 from django.contrib.messages.views import SuccessMessageMixin
 
 
+# class LoginView(View):
+#     @staticmethod
+#     def get(request, *args, **kwargs):
+#         return render(request, 'registration/login.html')
+
+
 
 class LogoutView(View):
     @staticmethod

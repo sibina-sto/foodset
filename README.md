@@ -39,11 +39,11 @@ These features cover the core functionality required for a food-related web appl
 providing users with a seamless experience for sharing, discovering, and interacting with 
 food-related content while also ensuring their account security and personalization options.
 
-## Foodset Admin Area
+# Foodset Admin Area
 Username: Admin
 Password: 1234
 
-## User Login
+# User Login
 Username: Maeva
 Password: asdfgh11
 

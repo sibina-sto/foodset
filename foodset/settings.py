@@ -14,6 +14,7 @@ SECRET_KEY = 'django-insecure-xy15ku4r%9brz5#p$9a_g64i8#=^%-f__&^vr*i+(4-6&px&k#
 # SECRET_KEY = os.getenv("SECRET_KEY")
 # SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
+
 DEBUG = True
 # DEBUG = os.getenv("DEBUG", default=True)
 # DEBUG = config('DEBUG', default=True, cast=bool)
@@ -172,4 +173,4 @@ EMAIL_HOST_PASSWORD = 'pbbwzhhyukstlekt'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # AUTH_USER_MODEL = "accounts.AccountUser"
-# CSRF_TRUSTED_ORIGINS = [f"https://{origin}" for origin in ALLOWED_HOSTS]
+CSRF_TRUSTED_ORIGINS = [f"https://{origin}" for origin in ALLOWED_HOSTS]

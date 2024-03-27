@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-xy15ku4r%9brz5#p$9a_g64i8#=^%-f__&^vr*i+(4-6&px&k#
 # SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-# DEBUG = os.getenv("DEBUG")
+# DEBUG = os.getenv("DEBUG", default=True)
 # DEBUG = config('DEBUG', default=True, cast=bool)
 
 ALLOWED_HOSTS = ['*']
@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'foodset.wsgi.application'
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
-# }
-#
+# # }
+# #
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
@@ -93,11 +93,11 @@ DATABASES = {
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': config('NAME'),
-#         'USER': config('USER'),
-#         'PASSWORD': config('PASSWORD'),
-#         'HOST': config('HOST'),
-#         'PORT': config('PORT'),
+#         'NAME': os.getenv('NAME'),
+#         'USER': os.getenv('USER'),
+#         'PASSWORD': os.getenv('PASSWORD'),
+#         'HOST': os.getenv('HOST'),
+#         'PORT': os.getenv('PORT'),
 #     }
 # }
 

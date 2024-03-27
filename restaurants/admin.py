@@ -12,7 +12,6 @@ class RestaurantAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_at'
 
 
-
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
     list_display = ['__str__', 'user', 'created_at']

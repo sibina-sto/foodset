@@ -45,7 +45,7 @@ Password: 1234
 
 
 ## Screenshots
-![1_Foodset_Home.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/1_Foodset_Home.png?raw=true)
+![1_Foodset_Home.png](https://github.com/sibina-sto/Foodset/blob/main/image/1_Foodset_Home.png?raw=true)
 ![2_Foodset_Dashboard.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/2_Foodset_Dashboard.png?raw=true)
 ![3_Foodset_Profile_Details.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/3_Foodset_Profile_Details.png?raw=true)
 ![4_Foodset_Create_New_Post.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/4_Foodset_Create_New_Post.png?raw=true)

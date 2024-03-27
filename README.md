@@ -45,7 +45,7 @@ food-related content while also ensuring their account security and personalizat
 
 ## Screenshots
 
-![1_Foodset_Home.png](https://github.com/sibina-sto/Foodset/blob/main/image/1_Foodset_Home.png)
+![1_Foodset_Home.png](https://github.com/sibina-sto/Foodset/blob/main/image/1_Foodset_Home.png "Foodset")
 ![2_Foodset_Dashboard.png](https://github.com/sibina-sto/Foodset/blob/main/image/2_Foodset_Dashboard.png?raw=true)
 ![3_Foodset_Profile_Details.png](https://github.com/sibina-sto/Foodset/blob/main/image/3_Foodset_Profile_Details.png?raw=true)
 ![4_Foodset_Create_New_Post.png](https://github.com/sibina-sto/Foodset/blob/main/image/4_Foodset_Create_New_Post.png?raw=true)

@@ -37,6 +37,24 @@ functionality.
 
 These features cover the core functionality required for a food-related web application, 
 providing users with a seamless experience for sharing, discovering, and interacting with 
-food-related content while also ensuring their account security and personalization options.# foodset
+food-related content while also ensuring their account security and personalization options.
+
+## Foodset Admin Area
+Username: Admin
+Password: 1234
+
 
 ## Screenshots
+![1_Foodset_Home.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/1_Foodset_Home.png?raw=true)
+![2_Foodset_Dashboard.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/2_Foodset_Dashboard.png?raw=true)
+![3_Foodset_Profile_Details.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/3_Foodset_Profile_Details.png?raw=true)
+![4_Foodset_Create_New_Post.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/4_Foodset_Create_New_Post.png?raw=true)
+![5.1_Foodset_Update_Post.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/5.1_Foodset_Update_Post.png?raw=true)
+![5.2_Foodset_Delete.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/5.2_Foodset_Delete.png?raw=true)
+![6_Foodset_User_Login.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/6_Foodset_User_Login.png?raw=true)
+![7_Foodset_User_Registration.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/7_Foodset_User_Registration.png?raw=true)
+![8_Admin_Profile.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/8_Admin_Profile.png?raw=true)
+![9_Admin_Groups.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/9_Admin_Groups.png?raw=true)
+![10_Admin_User.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/10_Admin_User.png?raw=true)
+![11_Admin_Restaurants.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/11_Admin_Restaurants.png?raw=true)
+![12_Admin_Comments.png](https://github.com/sibina-sto/Foodset/blob/main/screenshots/12_Admin_Comments.png?raw=true)

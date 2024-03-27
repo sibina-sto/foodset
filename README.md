@@ -43,6 +43,10 @@ food-related content while also ensuring their account security and personalizat
 Username: Admin
 Password: 1234
 
+## User Login
+Username: Maeva
+Password: 
+
 
 ## Screenshots
 ![1_Foodset_Home.png](https://github.com/sibina-sto/Foodset/blob/main/image/1_Foodset_Home.png?raw=true)

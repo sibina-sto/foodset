@@ -73,27 +73,27 @@ WSGI_APPLICATION = 'foodset.wsgi.application'
 #     }
 # # }
 # #
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": "foodset_db",
-        "USER": "postgres",
-        "PASSWORD": "123456",
-        "HOST": "127.0.0.1",
-        "PORT": "5432",
-    }
-}
-
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': config('NAME'),
-#         'USER': config('USER'),
-#         'PASSWORD': config('PASSWORD'),
-#         'HOST': config('HOST'),
-#         'PORT': config('PORT'),
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": "foodset_db",
+#         "USER": "postgres",
+#         "PASSWORD": "123456",
+#         "HOST": "127.0.0.1",
+#         "PORT": "5432",
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': config('NAME'),
+        'USER': config('USER'),
+        'PASSWORD': config('PASSWORD'),
+        'HOST': config('HOST'),
+        'PORT': config('PORT', cast=int),
+    }
+}
 
 # EMAIL_PORT = config('EMAIL_PORT', cast=int)
 
@@ -149,6 +149,16 @@ EMAIL_PORT = config('EMAIL_PORT', default=25, cast=int)
 EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
 EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
 EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=False, cast=bool)
+
+
+
+# Email configuration
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'ani.tgbzhn@gmail.com'
+# EMAIL_HOST_PASSWORD = 'pbbwzhhyukstlekt'
 
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 

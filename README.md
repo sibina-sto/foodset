@@ -45,4 +45,4 @@ food-related content while also ensuring their account security and personalizat
 
 ## Screenshots
 
-![1_Foodset_Home.png](https://github.com/sibina-sto/Foodset/blob/main/1_Foodset_Home.png)
+![1_Foodset_Home.png](https://github.com/sibina-sto/Foodset/blob/main/1_Foodset_Home.png?raw=true)

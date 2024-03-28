@@ -8,7 +8,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECURITY WARNING: don't run with debug turned on in production!
 SECRET_KEY = config('SECRET_KEY')
-# SECRET_KEY = 'django-insecure-6z@!q#%q#qk5!h#6!q0p&@a+q^p+0h7@q&%q#qk5!h#6!q0p'
 
 # DEBUG = True
 DEBUG = config('DEBUG', default=False, cast=bool)
@@ -72,17 +71,6 @@ WSGI_APPLICATION = 'foodset.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # # }
-# #
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": "foodset_db",
-#         "USER": "postgres",
-#         "PASSWORD": "123456",
-#         "HOST": "127.0.0.1",
-#         "PORT": "5432",
-#     }
-# }
 
 DATABASES = {
     'default': {

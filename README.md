@@ -44,7 +44,3 @@ food-related content while also ensuring their account security and personalizat
 ### Password: 1234
 
 ## Screenshots
-
-![1_Foodset_Home.png](https://github.com/sibina-sto/foodset/blob/main/image/1_Foodset_Home.png?raw=true&#41)
-
-<!-- ![3_Foodset_Profile_Details.png](https://github.com/sibina-sto/foodset/blob/main/image/3_Foodset_Profile_Details.png) -->

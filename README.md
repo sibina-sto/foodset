@@ -45,5 +45,28 @@ Password: 1234
 
 ## Screenshots
 
-![1_Foodset_Home.png](https://github.com/sibina-sto/foodset/blob/main/image/1_Foodset_Home.png?raw=true)
+![1_Foodset_Home.png](https://github.com/sibina-sto/foodset/blob/main/image/1_Foodset_Home.png)
 
+![2_Foodset_Dashboard.png](https://github.com/sibina-sto/foodset/blob/main/image/2_Foodset_Dashboard.png)
+
+![3_Foodset_Profile_Details.png](https://github.com/sibina-sto/foodset/blob/main/image/3_Foodset_Profile_Details.png)
+
+![4_Foodset_Create_New_Post.png](https://github.com/sibina-sto/foodset/blob/main/image/4_Foodset_Create_New_Post.png)
+
+![5.1_Foodset_Update_Post.png](https://github.com/sibina-sto/foodset/blob/main/image/5_Foodset_Update_Post.png)
+
+![5.2_Foodset_Delete.png](https://github.com/sibina-sto/foodset/blob/main/image/5_Foodset_Delete.png)
+
+![6_Foodset_User_Login.png](https://github.com/sibina-sto/foodset/blob/main/image/6_Foodset_User_Login.png)
+
+![7_Foodset_User_Registration.png](https://github.com/sibina-sto/foodset/blob/main/image/7_Foodset_User_Registration.png)
+
+![8_Admin_Profile.png](https://github.com/sibina-sto/foodset/blob/main/image/8_Admin_Profile.png)
+
+![9_Admin_Groups.png](https://github.com/sibina-sto/foodset/blob/main/image/9_Admin_Groups.png)
+
+![10_Admin_User.png](https://github.com/sibina-sto/foodset/blob/main/image/10_Admin_User.png)
+
+![11_Admin_Restaurants.png](https://github.com/sibina-sto/foodset/blob/main/image/11_Admin_Restaurants.png)
+
+![12_Admin_Comments.png](https://github.com/sibina-sto/foodset/blob/main/image/12_Admin_Comments.png)

@@ -8,11 +8,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECURITY WARNING: don't run with debug turned on in production!
 SECRET_KEY = config('SECRET_KEY')
+# SECRET_KEY = os.getenv('SECRET_KEY', None)
 
 # DEBUG = True
 DEBUG = config('DEBUG', default=True, cast=bool)
+# DEBUG = bool(int(os.getenv('DEBUG', 1)))
 
 ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split()
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -83,6 +86,18 @@ DATABASES = {
     }
 }
 
+
+# DATABASES = {
+#     "default": {
+#         "ENGINE": "django.db.backends.postgresql",
+#         "NAME": os.getenv('DB_NAME', None),
+#         "USER": os.getenv('DB_USER', None),
+#         "PASSWORD": os.getenv('DB_PASSWORD', None),
+#         "HOST": os.getenv('DB_HOST', None),
+#         "PORT": os.getenv('DB_PORT', None),
+#     }
+# }
+
 # EMAIL_PORT = config('EMAIL_PORT', cast=int)
 
 
@@ -124,6 +139,7 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'staticfiles'),
 ]
+# STATIC_ROOT = os.getenv('STATIC_ROOT', BASE_DIR / 'staticfiles')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 MEDIA_URL = '/media/'
@@ -138,7 +154,18 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
 EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
 EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=True, cast=bool)
 
+# SMTP configuration
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = os.getenv('EMAIL_HOST', None)
+# EMAIL_PORT = os.getenv('EMAIL_PORT', None)
+# EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS', False)
+# EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', None)
+# EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', None)
+
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CSRF_TRUSTED_ORIGINS = [f"https://{origin}" for origin in ALLOWED_HOSTS]
+
+
+

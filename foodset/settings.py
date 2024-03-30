@@ -1,17 +1,18 @@
 import os
-from pathlib import Path
+# from pathlib import Path
 
-from decouple import config
+# from decouple import config
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECURITY WARNING: don't run with debug turned on in production!
-SECRET_KEY = config('SECRET_KEY')
+# SECRET_KEY = config('SECRET_KEY')
 # SECRET_KEY = os.getenv('SECRET_KEY', None)
+SECRET_KEY='django-insecure-6z@!q#%q#qk5!h#6!q0p&@a+q^p+0h7@q&%q#qk5!h#6!q0p'
 
-# DEBUG = True
-DEBUG = config('DEBUG', cast=bool)
+DEBUG = True
+# DEBUG = config('DEBUG', cast=bool)
 # DEBUG = bool(int(os.getenv('DEBUG', 1)))
 
 ALLOWED_HOSTS = ['*']
@@ -76,15 +77,26 @@ WSGI_APPLICATION = 'foodset.wsgi.application'
 # # }
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': config('NAME'),
-        'USER': config('USER'),
-        'PASSWORD': config('PASSWORD'),
-        'HOST': config('HOST'),
-        'PORT': config('PORT', cast=int),
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "foodset_db",
+        "USER": "postgres",
+        "PASSWORD": "123456",
+        "HOST": "127.0.0.1",
+        "PORT": "5432",
     }
 }
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': config('NAME'),
+#         'USER': config('USER'),
+#         'PASSWORD': config('PASSWORD'),
+#         'HOST': config('HOST'),
+#         'PORT': config('PORT'),
+#     }
+# }
 
 
 # DATABASES = {
@@ -98,7 +110,7 @@ DATABASES = {
 #     }
 # }
 
-EMAIL_PORT = config('EMAIL_PORT', cast=int)
+# EMAIL_PORT = config('EMAIL_PORT', cast=int)
 
 
 # Password validation
@@ -146,13 +158,21 @@ MEDIA_URL = '/media/'
 
 LOGIN_REDIRECT_URL = 'my_posts'
 
+# Email configuration
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'ani.tgbzhn@gmail.com'
+EMAIL_HOST_PASSWORD = 'pbbwzhhyukstlekt'
+
 # Email settings
-EMAIL_BACKEND = config('EMAIL_BACKEND', default='django.core.mail.backends.console.EmailBackend')
-EMAIL_HOST = config('EMAIL_HOST', default='localhost')
-EMAIL_PORT = config('EMAIL_PORT', default=25, cast=int)
-EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
-EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
-EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=True, cast=bool)
+# EMAIL_BACKEND = config('EMAIL_BACKEND', default='django.core.mail.backends.console.EmailBackend')
+# EMAIL_HOST = config('EMAIL_HOST', default='localhost')
+# EMAIL_PORT = config('EMAIL_PORT', default=25, cast=int)
+# EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD', default='')
+# EMAIL_HOST_USER = config('EMAIL_HOST_USER', default='')
+# EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=True, cast=bool)
 
 # SMTP configuration
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -162,10 +182,10 @@ EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=True, cast=bool)
 # EMAIL_HOST_USER = os.getenv('EMAIL_HOST_USER', None)
 # EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD', None)
 
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+# DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CSRF_TRUSTED_ORIGINS = [f"https://{origin}" for origin in ALLOWED_HOSTS]
+# CSRF_TRUSTED_ORIGINS = [f"https://{origin}" for origin in ALLOWED_HOSTS]
 
 
 

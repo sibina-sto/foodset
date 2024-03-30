@@ -4,8 +4,8 @@ from pathlib import Path
 
 from decouple import config, Csv
 
-# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECURITY WARNING: don't run with debug turned on in production!
@@ -17,6 +17,7 @@ SECRET_KEY = config('SECRET_KEY')
 # DEBUG = config('DEBUG')
 DEBUG = config('DEBUG', default=True, cast=bool)
 # DEBUG = bool(int(os.getenv('DEBUG', 1)))
+
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split()
@@ -80,17 +81,6 @@ WSGI_APPLICATION = 'foodset.wsgi.application'
 #     }
 # # }
 
-# DATABASES = {
-#     "default": {
-#         "ENGINE": "django.db.backends.postgresql",
-#         "NAME": "foodset_db",
-#         "USER": "postgres",
-#         "PASSWORD": "123456",
-#         "HOST": "127.0.0.1",
-#         "PORT": "5432",
-#     }
-# }
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
@@ -101,7 +91,6 @@ DATABASES = {
         'PORT': config('PORT'),
     }
 }
-
 
 # DATABASES = {
 #     "default": {
@@ -162,14 +151,6 @@ MEDIA_URL = '/media/'
 
 LOGIN_REDIRECT_URL = 'my_posts'
 
-# Email configuration
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = 'ani.tgbzhn@gmail.com'
-# EMAIL_HOST_PASSWORD = 'pbbwzhhyukstlekt'
-
 # Email settings
 EMAIL_BACKEND = config('EMAIL_BACKEND', default='django.core.mail.backends.console.EmailBackend')
 EMAIL_HOST = config('EMAIL_HOST', default='localhost')
@@ -189,7 +170,7 @@ EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=True, cast=bool)
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-# CSRF_TRUSTED_ORIGINS = [f"https://{origin}" for origin in ALLOWED_HOSTS]
+CSRF_TRUSTED_ORIGINS = [f"https://{origin}" for origin in ALLOWED_HOSTS]
 
 
 

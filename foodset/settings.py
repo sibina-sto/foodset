@@ -188,4 +188,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # CSRF_TRUSTED_ORIGINS = [f"https://{origin}" for origin in ALLOWED_HOSTS]
 
 
+#setting.json
+# {
+#     "cSpell.words": [
+#         "Foodset"
+#     ]
+# }
+
+
 

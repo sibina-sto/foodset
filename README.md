@@ -39,10 +39,6 @@ These features cover the core functionality required for a food-related web appl
 providing users with a seamless experience for sharing, discovering, and interacting with 
 food-related content while also ensuring their account security and personalization options.
 
-## Foodset Admin Area
-Username: Admin
-Password: 1234
-
 ## Screenshots
 
 ![1_Foodset_Home.png](https://github.com/sibina-sto/foodset/blob/main/image/1_Foodset_Home.png?raw=true)

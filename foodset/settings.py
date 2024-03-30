@@ -32,6 +32,7 @@ INSTALLED_APPS = [
 
     'restaurants.apps.RestaurantsConfig',
     'accounts.apps.AccountsConfig',
+    'decouple',
 ]
 
 MIDDLEWARE = [

@@ -1,8 +1,8 @@
 import os
-from ctypes import cast
+# from ctypes import cast
 from pathlib import Path
 
-from decouple import config, Csv
+from decouple import config
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # BASE_DIR = Path(__file__).resolve().parent.parent
@@ -18,7 +18,7 @@ DEBUG = config('DEBUG', default=True, cast=bool)
 # DEBUG = bool(int(os.getenv('DEBUG', 1)))
 
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
+ALLOWED_HOSTS = config('ALLOWED_HOSTS')
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split()
 
 INSTALLED_APPS = [
@@ -32,7 +32,7 @@ INSTALLED_APPS = [
 
     'restaurants.apps.RestaurantsConfig',
     'accounts.apps.AccountsConfig',
-    'decouple',
+    # 'decouple',
 ]
 
 MIDDLEWARE = [

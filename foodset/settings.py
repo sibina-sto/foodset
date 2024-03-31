@@ -18,7 +18,7 @@ DEBUG = config('DEBUG', default=True, cast=bool)
 # DEBUG = bool(int(os.getenv('DEBUG', 1)))
 
 
-ALLOWED_HOSTS = config('ALLOWED_HOSTS')
+ALLOWED_HOSTS = ['*']
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split()
 
 INSTALLED_APPS = [

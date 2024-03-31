@@ -11,7 +11,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: don't run with debug turned on in production!
 SECRET_KEY = config('SECRET_KEY')
 # SECRET_KEY = os.getenv('SECRET_KEY', None)
-# SECRET_KEY='django-insecure-6z@!q#%q#qk5!h#6!q0p&@a+q^p+0h7@q&%q#qk5!h#6!q0p'
 
 # DEBUG = True
 # DEBUG = config('DEBUG')

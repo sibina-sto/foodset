@@ -7,5 +7,3 @@
 *.xml  eol=lf
 *.text eol=lf
 * text=auto
-
-*.bat eol=crlf

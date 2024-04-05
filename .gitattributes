@@ -8,5 +8,5 @@
 
 * text=auto
 
-*.bat eol=crlf
+; *.bat eol=crlf
 * text=auto eol=crlf

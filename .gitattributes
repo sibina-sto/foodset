@@ -8,3 +8,4 @@
 *.svg  eol=lf
 *.xml  eol=lf
 *.text eol=lf
+* text=auto

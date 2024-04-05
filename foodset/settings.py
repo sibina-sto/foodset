@@ -18,6 +18,7 @@ DEBUG = config('DEBUG', default=True, cast=bool)
 # DEBUG = bool(int(os.getenv('DEBUG', 1)))
 
 
+
 # ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', "localhost,127.0.0.1").split(",")
 # ALLOWED_HOSTS = os.getenv('ALLOWED_HOSTS', '').split()

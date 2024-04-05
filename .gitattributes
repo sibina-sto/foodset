@@ -1,6 +1,9 @@
-* text=auto
-* text eol=lf
-*.md text=auto
-*.md eol=lf
-*.markdown text=auto
-*.markdown eol=lf
+; * text=auto
+; * text eol=lf
+*.html eol=lf
+*.js   eol=lf
+*.json eol=lf
+*.less eol=lf
+*.md   eol=lf
+*.svg  eol=lf
+*.xml  eol=lf

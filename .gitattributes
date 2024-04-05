@@ -1,16 +1,16 @@
-* text=auto
-* text eol=lf
-* .pdf binary
-* .zip binary
-* .tar binary
-* png binary
-* jpg binary
-* jpeg binary
-* gif binary
-* ttf binary
-* otf binary
-* svg binary
-* docx binary
-* doc binary
-* bmp binary
-* webp binary
+; * text=auto
+; * text eol=lf
+; * .pdf binary
+; * .zip binary
+; * .tar binary
+; * png binary
+; * jpg binary
+; * jpeg binary
+; * gif binary
+; * ttf binary
+; * otf binary
+; * svg binary
+; * docx binary
+; * doc binary
+; * bmp binary
+; * webp binary

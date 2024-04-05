@@ -7,3 +7,4 @@
 *.md   eol=lf
 *.svg  eol=lf
 *.xml  eol=lf
+*.text eol=lf

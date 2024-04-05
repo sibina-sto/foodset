@@ -1,4 +1,6 @@
 * text=auto
 * text eol=lf
-* text encoding=utf-8
-* binary
+*.md text=auto
+*.md eol=lf
+*.markdown text=auto
+*.markdown eol=lf

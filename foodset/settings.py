@@ -1,5 +1,5 @@
 import os
-# from ctypes import cast
+# import cloudinary
 from pathlib import Path
 
 from decouple import config
@@ -7,8 +7,6 @@ from decouple import config
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # BASE_DIR = Path(__file__).resolve().parent.parent
 
-# SECURITY WARNING: keep the secret key used in production secret!
-# SECURITY WARNING: don't run with debug turned on in production!
 SECRET_KEY = config('SECRET_KEY')
 # SECRET_KEY = os.getenv('SECRET_KEY', None)
 
@@ -190,3 +188,9 @@ EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=False)
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# cloudinary.config(
+#     cloud_name=config('CLOUD_NAME'),
+#     api_key=config('API_KEY'),
+#     api_secret=config('API_SECRET'),
+#)

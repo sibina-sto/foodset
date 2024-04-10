@@ -1,5 +1,5 @@
 import os
-# import cloudinary
+
 from pathlib import Path
 
 from decouple import config
@@ -188,9 +188,3 @@ EMAIL_USE_TLS = config('EMAIL_USE_TLS', default=False)
 # DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-# cloudinary.config(
-#     cloud_name=config('CLOUD_NAME'),
-#     api_key=config('API_KEY'),
-#     api_secret=config('API_SECRET'),
-#)

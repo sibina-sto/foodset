@@ -11,8 +11,8 @@ SECRET_KEY = config('SECRET_KEY')
 # SECRET_KEY = os.getenv('SECRET_KEY', None)
 
 # DEBUG = True
-# DEBUG = config('DEBUG')
-DEBUG = config('DEBUG', default=True, cast=bool)
+DEBUG = config('DEBUG')
+# DEBUG = config('DEBUG', default=True, cast=bool)
 # DEBUG = bool(int(os.getenv('DEBUG', 1)))
 
 # ALLOWED_HOSTS = ['*']

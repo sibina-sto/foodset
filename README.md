@@ -33,7 +33,7 @@ functionality.
     10. Profile Picture: Enables users to upload or change their profile picture. This feature allows users 
     to add a profile picture that they'd like to personalize their profiles.
 
-    11. Logout: Logs the user out of their account, terminating their current session.
+    11. Logout: Logs the user out of their account. Terminating their current session.
 
 These features cover the core functionality required for a food-related web application, 
 providing users with a seamless experience for sharing, discovering, and interacting with 
